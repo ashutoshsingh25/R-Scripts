@@ -1,0 +1,17 @@
+1.To clean the file: txt files containint id_1.txt,id_2.txt need to be cleaned
+
+$ find /cygdrive/c/Users/Imart/Desktop/Submersible/txtfile/*.txt -type f -exec sed -i 's/\r//g' {} \; 
+
+2.Make a list:
+
+$ find /cygdrive/c/Users/Imart/Desktop/Submersible/training/ -name \*.txt -printf "%f\n" > /cygdrive/c/Users/Imart/Desktop/Submersible/list3
+
+3.train the model:
+
+$ while read p; do fasttext/fasttext.exe supervised -input /cygdrive/c/Users/Imart/Desktop/Submersible/training/$p -output  /cygdrive/c/Users/Imart/Desktop/Submersible/output/$p -lr 0.1 -minn 3 -epoch 25 -wordNgrams 2 -bucket 1000000; done <  /cygdrive/c/Users/Imart/Desktop/Submersible/list3
+
+
+4.testing(prdict prob):
+
+$ while read q; do while read p; do cat /cygdrive/c/Users/Imart/Desktop/PUMPS/PUMPNEW/testing/$q/$p ; fasttext/fasttext.exe predict-prob /cygdrive/e/pumpoutput/$q.txt.bin /cygdrive/c/Users/Imart/Desktop/PUMPS/PUMPNEW/testing/$q/$p 2 ; done < /cygdrive/c/Users/Imart/Desktop/PUMPS/PUMPNEW/txtlist/$q.txt > /cygdrive/c/Users/Imart/Desktop/PUMPS/PUMPNEW/output/$q.out ; done <  /cygdrive/c/Users/Imart/Desktop/PUMPS/PUMPNEW/listpumps
+  
