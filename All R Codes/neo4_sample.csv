@@ -1,0 +1,11 @@
+﻿Product_ID,Product_Name,Prime_MCAT,PMCAT,Brand,Price,GLUSER_ID,Image_URL,Subcat
+1,JCB Excavator js140,JCB Excavator,Excavator,JCB,2500000,10,1.jpg,155
+2,JCB Excavator js210,JCB Excavator,Excavator,JCB,3500000,10,2.jpg,155
+3,CAT Excavator Machine,CAT Excavator,Excavator,CAT,4500000,11,3.jpg,155
+4,JCB 3dx,JCB Backhoe Loader,Backhoe Loader,JCB,1500000,11,4.jpeg,155
+5,JCB 4dx,JCB Backhoe Loader,Backhoe Loader,JCB,1900000,11,6.jpeg,155
+6,JCB Road Roller Machine,JCB Road Roller,Road Roller,JCB,3000000,10,5.jpeg,155
+7,CAT Loader Machine,CAT Backhoe Loader,Backhoe Loader,CAT,2500000,11,7.jpeg,155
+8,Volvo 140 Excavation,Volvo Excavator,Excavator,Volvo,3800000,10,8.jpeg,155
+9,CAT Road Roller Machine,CAT Road Roller,Road Roller,CAT,4000000,10,9.jpeg,155
+10,CAT Loader Machine Backhoe,CAT Backhoe Loader,Backhoe Loader,CAT,3500000,11,10.jpeg,155
